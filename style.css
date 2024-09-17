@@ -1,0 +1,78 @@
+@import url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--Grey-900);
+    color: var(--White);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+}
+
+p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.card{
+    width: 360px;
+    background: var(--Grey-800);
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+
+.upper_section img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.upper_section p{
+    color: var(--Green);
+}
+
+.upper_section h2{
+    font-size: 24px;
+    line-height: 34px;
+}
+
+
+.bottom_section{
+    margin-top: 20px;
+}
+
+
+.bottom_section a{
+    display: block;
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Grey-700);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.bottom_section a.active,
+.bottom_section a:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
